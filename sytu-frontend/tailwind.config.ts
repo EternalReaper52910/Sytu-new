@@ -9,11 +9,14 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "#0B0F19",
-        surface: "#111827",
-        primary: "#6C63FF",
-        accent: "#00D4FF",
-        text: "#F9FAFB",
+        background: "#0A0A0A",
+        surface: "#171717",
+        border: "#262626",
+        primary: "#FFFFFF",
+        primaryForeground: "#000000",
+        accent: "#323232",
+        text: "#EDEDED",
+        muted: "#A1A1AA",
       },
       fontFamily: {
         sans: ['var(--font-inter)', 'sans-serif'],
