@@ -1,17 +1,14 @@
 # NEXT STEPS
 
 ## Pending Work (Active Phase)
-**Phase 2: Backend Database & Authentication**
-- Configure MongoDB connection via Mongoose (`backend/src/config/db.ts`).
-- Build core database schemas based on System Design PDF (`User`, `Portfolio`, `Project`, etc.).
-- Build the Authentication API (`/v1/auth/register`, `/v1/auth/login`).
-- Implement stateless JWT strategy (Access Tokens + secure HTTP-only Refresh Tokens).
-- Add Zod validation for auth routes.
+**Phase 2: Backend Architecture & Team Splits**
+- ✅ **Auth Service:** Completed by teammate (CommonJS, in-memory array + JWT Auth).
+- ✅ **Portfolio & Content Module:** Completed for Pragya (Mongoose models, Express routes, fallback mock logic).
+- 🔲 **Collaboration & Real-Time Module:** Vedansh's part (Smart matching engine, Socket.IO chat infrastructure).
 
 ## Backlog
-- **Frontend API Integration:** Replace `mockData.ts` on the landing page with real React Query calls to the Express backend.
+- **Frontend API Integration:** Replace `mockData.ts` on the landing page with real API calls to the Express backend (`/api/portfolios`, `/api/projects`).
 - **Dashboard Pages:** Build the internal UI for the Portfolio Editor, Project Management, and User Settings.
-- **Real-time Messaging:** Build the Socket.IO infrastructure for private messaging and matching notifications.
 - **Matching Algorithm:** Implement the logic that calculates Compatibility % based on user goals, skills, and roles.
 
 ## Future Ideas
