@@ -29,5 +29,9 @@ export async function connectRedis(): Promise<void> {
   }
 }
 
+export function setRedisClient(client: Redis) {
+  redis = client;
+}
+
 export { redis };
 export default redis;
